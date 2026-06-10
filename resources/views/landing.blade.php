@@ -5,15 +5,15 @@
 {{-- ============================================
      HERO SECTION
      ============================================ --}}
-<section class="relative bg-[#FFFAF3] pt-16 pb-24 overflow-hidden">
+<section class="relative bg-[#FFFAF3] pt-10 sm:pt-16 pb-16 sm:pb-24 overflow-hidden">
     <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-[#C0392B]/5 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] bg-[#E67E22]/5 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-            <div class="order-2 lg:order-1">
-                <div class="inline-flex items-center gap-2 bg-[#C0392B]/10 text-[#C0392B] px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-8">
+            <div class="order-2 lg:order-1 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-[#C0392B]/10 text-[#C0392B] px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-6 sm:mb-8">
                     <span class="relative flex h-2 w-2">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C0392B] opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-[#C0392B]"></span>
@@ -21,19 +21,20 @@
                     Lutong Bahay · Order Online
                 </div>
 
-                <h1 class="font-[Playfair_Display] text-5xl md:text-7xl font-black text-[#2C1A0E] leading-tight mb-3">
+                <h1 class="font-[Playfair_Display] text-4xl sm:text-5xl md:text-7xl font-black text-[#2C1A0E] leading-tight mb-3">
                     Craving for
                 </h1>
 
-                <div class="mb-8 font-[Playfair_Display] text-5xl md:text-7xl font-black italic text-[#C0392B] leading-tight"
-                     style="min-height:1.15em; display:flex; flex-wrap:wrap; overflow:hidden;" id="rotating-wrap">
+                <div class="mb-6 sm:mb-8 font-[Playfair_Display] text-4xl sm:text-5xl md:text-7xl font-black italic text-[#C0392B] leading-tight"
+                     style="min-height:1.15em; display:flex; flex-wrap:wrap; overflow:hidden; justify-content:center;" id="rotating-wrap"
+                     class="lg:justify-start">
                 </div>
 
-                <p class="text-lg text-[#2C1A0E]/70 max-w-lg mb-10 leading-relaxed">
+                <p class="text-base sm:text-lg text-[#2C1A0E]/70 max-w-lg mb-8 sm:mb-10 leading-relaxed mx-auto lg:mx-0">
                     {{ $settings['hero_sub'] ?? 'Authentic Filipino home cooking, made with love and ordered straight to your door.' }}
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12 justify-center lg:justify-start">
                     <a href="/menu"
                        class="group bg-[#C0392B] text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#A93226] transition-all shadow-xl shadow-[#C0392B]/20 flex items-center justify-center gap-3">
                         Mag-Order Na 🛒
@@ -57,29 +58,29 @@
             </div>
 
             <div class="order-1 lg:order-2 relative flex justify-center">
-                <div class="relative w-80 h-80 md:w-96 md:h-96">
+                <div class="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
                     <div class="w-full h-full rounded-full overflow-hidden shadow-2xl border-8 border-white">
                         <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=700&q=80"
                              class="w-full h-full object-cover" alt="Filipino Food">
                     </div>
-                    <div class="absolute top-4 -right-4 bg-[#C0392B] text-white px-5 py-3 rounded-2xl shadow-xl font-black text-center">
-                        <p class="text-2xl leading-none">₱150</p>
+                    <div class="absolute top-2 sm:top-4 -right-2 sm:-right-4 bg-[#C0392B] text-white px-3 sm:px-5 py-2 sm:py-3 rounded-2xl shadow-xl font-black text-center">
+                        <p class="text-xl sm:text-2xl leading-none">₱150</p>
                         <p class="text-[10px] opacity-80 mt-0.5">starts at</p>
                     </div>
-                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-xl px-4 py-2.5 flex items-center gap-3 whitespace-nowrap">
-                        <span class="text-2xl">🍲</span>
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-xl px-3 sm:px-4 py-2 sm:py-2.5 flex items-center gap-2 sm:gap-3 whitespace-nowrap">
+                        <span class="text-xl sm:text-2xl">🍲</span>
                         <div>
-                            <p class="font-bold text-sm text-[#2C1A0E] leading-none">Sariwang Luto</p>
-                            <p class="text-xs text-[#2C1A0E]/50 mt-0.5">Araw-araw</p>
+                            <p class="font-bold text-xs sm:text-sm text-[#2C1A0E] leading-none">Sariwang Luto</p>
+                            <p class="text-[10px] sm:text-xs text-[#2C1A0E]/50 mt-0.5">Araw-araw</p>
                         </div>
                     </div>
-                    <div class="absolute -top-2 -left-6 w-14 h-14 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3]">
+                    <div class="absolute -top-2 -left-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3] floating-food" style="animation-delay:0s;">
                         <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=120&q=80" class="w-full h-full object-cover" alt="">
                     </div>
-                    <div class="absolute bottom-10 -right-8 w-12 h-12 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3]">
+                    <div class="absolute bottom-10 -right-6 sm:-right-8 w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3] floating-food" style="animation-delay:0.6s;">
                         <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=120&q=80" class="w-full h-full object-cover" alt="">
                     </div>
-                    <div class="absolute top-1/3 -left-10 w-10 h-10 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3]">
+                    <div class="absolute top-1/3 -left-8 sm:-left-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden shadow-lg border-4 border-[#FFFAF3] floating-food" style="animation-delay:1.2s;">
                         <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=120&q=80" class="w-full h-full object-cover" alt="">
                     </div>
                 </div>
@@ -92,12 +93,12 @@
 {{-- ============================================
      BEST SELLERS
      ============================================ --}}
-<section class="py-24 bg-white">
+<section class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
             <div>
                 <p class="text-[#E67E22] font-bold tracking-widest uppercase text-sm mb-4">Piling Putahe</p>
-                <h2 class="font-[Playfair_Display] text-5xl font-black text-[#2C1A0E]">Ang Aming Best Sellers</h2>
+                <h2 class="font-[Playfair_Display] text-3xl sm:text-5xl font-black text-[#2C1A0E]">Ang Aming Best Sellers</h2>
             </div>
             <a href="/menu" class="inline-flex items-center gap-2 text-[#C0392B] font-bold text-lg hover:gap-4 transition-all">
                 Tingnan lahat ng putahe
@@ -107,11 +108,10 @@
             </a>
         </div>
 
-        {{-- Single column on mobile → 2 col on md → 3 col on lg --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             @foreach($showcase as $item)
             <div class="group bg-[#FFFAF3] rounded-[32px] p-4 transition-all hover:shadow-2xl hover:-translate-y-2">
-                <div class="relative h-64 sm:h-72 rounded-[24px] overflow-hidden mb-6">
+                <div class="relative h-56 sm:h-64 lg:h-72 rounded-[24px] overflow-hidden mb-6">
                     @php $img = $item->image_url ?: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&q=80'; @endphp
                     <img src="{{ $img }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="{{ $item->name }}">
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl text-[#C0392B] text-xs font-black uppercase tracking-wider">
@@ -120,8 +120,8 @@
                 </div>
                 <div class="px-2 pb-4">
                     <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-[Playfair_Display] text-2xl font-black text-[#2C1A0E] group-hover:text-[#C0392B] transition-colors">{{ $item->name }}</h3>
-                        <p class="font-black text-2xl text-[#C0392B] ml-2 flex-shrink-0">₱{{ number_format($item->sizes[0]['price']) }}</p>
+                        <h3 class="font-[Playfair_Display] text-xl sm:text-2xl font-black text-[#2C1A0E] group-hover:text-[#C0392B] transition-colors">{{ $item->name }}</h3>
+                        <p class="font-black text-xl sm:text-2xl text-[#C0392B] ml-2 flex-shrink-0">₱{{ number_format($item->sizes[0]['price']) }}</p>
                     </div>
                     <p class="text-[#2C1A0E]/60 mb-6 line-clamp-2 leading-relaxed text-sm">{{ $item->description }}</p>
                     <a href="/menu" class="block w-full bg-[#2C1A0E] text-white text-center py-4 rounded-2xl font-bold transition-all hover:bg-[#C0392B] active:scale-95">
@@ -137,14 +137,14 @@
 {{-- ============================================
      ABOUT SECTION
      ============================================ --}}
-<section id="about" class="py-24 bg-[#FFFAF3] overflow-hidden">
+<section id="about" class="py-16 sm:py-24 bg-[#FFFAF3] overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center gap-20">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             <div class="w-full lg:w-1/2 relative">
                 <div class="relative z-10 bg-white p-4 rounded-[40px] shadow-2xl rotate-3">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" class="w-full h-[500px] object-cover rounded-[32px]" alt="Tita Cooking">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" class="w-full h-[350px] sm:h-[500px] object-cover rounded-[32px]" alt="Tita Cooking">
                 </div>
-                <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 bg-[#E67E22] p-8 rounded-[40px] shadow-2xl -rotate-6 z-0 hidden lg:block">
+                <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 bg-[#E67E22] p-6 sm:p-8 rounded-[40px] shadow-2xl -rotate-6 z-0 hidden lg:block">
                     <div class="text-white text-center">
                         <p class="text-5xl font-black mb-1">100%</p>
                         <p class="text-xs font-bold uppercase tracking-widest">Handmade with Love</p>
@@ -152,31 +152,34 @@
                 </div>
             </div>
 
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
                 <p class="text-[#E67E22] font-bold tracking-widest uppercase text-sm mb-4">Sino si Tita?</p>
-                <h2 class="font-[Playfair_Display] text-5xl lg:text-6xl font-black text-[#2C1A0E] mb-8 leading-tight">
+                <h2 class="font-[Playfair_Display] text-4xl sm:text-5xl lg:text-6xl font-black text-[#2C1A0E] mb-8 leading-tight">
                     Ang Kwento sa <span class="text-[#C0392B]">Likod ng Kawali.</span>
                 </h2>
-                <div class="space-y-6 text-xl text-[#2C1A0E]/70 leading-relaxed mb-12">
+                <div class="space-y-6 text-lg sm:text-xl text-[#2C1A0E]/70 leading-relaxed mb-10 sm:mb-12">
                     <p>{{ $settings['about_text'] }}</p>
                     <p>Mula sa pagpili ng pinakasariwang sangkap hanggang sa mabagal na pagluluto para makuha ang tunay na linamnam—ito ang aming pangako sa inyo.</p>
                 </div>
 
-                {{-- Pamilya / Tradisyon — centered on mobile, left on desktop --}}
-                <div class="grid grid-cols-2 gap-8 py-8 border-y border-[#2C1A0E]/10 mb-12 text-center lg:text-left">
+                {{-- Centered on all screens --}}
+                <div class="grid grid-cols-2 gap-8 py-8 border-y border-[#2C1A0E]/10 mb-10 sm:mb-12 text-center">
                     <div>
-                        <p class="font-[Playfair_Display] text-4xl font-black text-[#C0392B] mb-2">Pamilya</p>
-                        <p class="text-sm font-bold text-[#2C1A0E]/50 uppercase tracking-wider">Ang aming inspirasyon</p>
+                        <p class="font-[Playfair_Display] text-3xl sm:text-4xl font-black text-[#C0392B] mb-2">Pamilya</p>
+                        <p class="text-xs sm:text-sm font-bold text-[#2C1A0E]/50 uppercase tracking-wider">Ang aming inspirasyon</p>
                     </div>
                     <div>
-                        <p class="font-[Playfair_Display] text-4xl font-black text-[#C0392B] mb-2">Tradisyon</p>
-                        <p class="text-sm font-bold text-[#2C1A0E]/50 uppercase tracking-wider">Ang aming sekreto</p>
+                        <p class="font-[Playfair_Display] text-3xl sm:text-4xl font-black text-[#C0392B] mb-2">Tradisyon</p>
+                        <p class="text-xs sm:text-sm font-bold text-[#2C1A0E]/50 uppercase tracking-wider">Ang aming sekreto</p>
                     </div>
                 </div>
 
-                <a href="/menu" class="inline-block bg-[#C0392B] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#A93226] transition-all shadow-xl shadow-[#C0392B]/20">
-                    Sali na sa aming hapag 🍲
-                </a>
+                {{-- Button centered --}}
+                <div class="flex justify-center lg:justify-start">
+                    <a href="/menu" class="inline-block bg-[#C0392B] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#A93226] transition-all shadow-xl shadow-[#C0392B]/20">
+                        Sali na sa aming hapag 🍲
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -185,8 +188,8 @@
 {{-- ============================================
      HOW TO ORDER — modal trigger
      ============================================ --}}
-<section class="py-16 bg-white text-center">
-    <h2 class="font-[Playfair_Display] text-4xl font-black text-[#2C1A0E] mb-6">Paano Mag-Order?</h2>
+<section class="py-12 sm:py-16 bg-white text-center">
+    <h2 class="font-[Playfair_Display] text-3xl sm:text-4xl font-black text-[#2C1A0E] mb-6">Paano Mag-Order?</h2>
     <p class="text-[#2C1A0E]/60 mb-8">Madali lang! Alamin ang steps sa pag-order.</p>
     <button onclick="document.getElementById('how-to-modal').classList.remove('hidden'); document.getElementById('how-to-modal').classList.add('flex')"
             class="inline-flex items-center gap-3 bg-[#C0392B] text-white px-8 py-4 rounded-2xl font-bold text-base hover:bg-[#A93226] transition-all shadow-lg shadow-[#C0392B]/20">
@@ -310,11 +313,11 @@
 {{-- ============================================
      REVIEWS SLIDESHOW
      ============================================ --}}
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-16 sm:py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-14">
+        <div class="text-center mb-10 sm:mb-14">
             <p class="text-[#E67E22] font-bold tracking-widest uppercase text-sm mb-4">Mga Feedback</p>
-            <h2 class="font-[Playfair_Display] text-5xl font-black text-[#2C1A0E]">Sinasabi ng aming Customers</h2>
+            <h2 class="font-[Playfair_Display] text-3xl sm:text-5xl font-black text-[#2C1A0E]">Sinasabi ng aming Customers</h2>
         </div>
 
         @php
@@ -413,19 +416,19 @@
 {{-- ============================================
      LOCATION MAP
      ============================================ --}}
-<section class="py-24 bg-[#FFFAF3]">
+<section class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-12">
             <p class="text-[#E67E22] font-bold tracking-widest uppercase text-sm mb-4">Hanapin Kami</p>
-            <h2 class="font-[Playfair_Display] text-5xl font-black text-[#2C1A0E]">Nasaan si Tita?</h2>
-            <p class="text-[#2C1A0E]/60 mt-4 text-lg">Delivery coverage area · Taguig, Metro Manila</p>
+            <h2 class="font-[Playfair_Display] text-3xl sm:text-5xl font-black text-[#2C1A0E]">Nasaan si Tita?</h2>
+            <p class="text-[#2C1A0E]/60 mt-4 text-base sm:text-lg">Delivery coverage area · Taguig, Metro Manila</p>
         </div>
-        <div class="rounded-[32px] overflow-hidden shadow-2xl border-4 border-white" style="height:420px;">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border-4 border-white" style="height:300px; sm:height:420px;">
             <iframe src="https://www.google.com/maps?q=14.467911,121.056777&z=15&output=embed"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" title="Tita's Kitchen Location"></iframe>
         </div>
-        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-sm text-[#2C1A0E]/60 font-medium text-center">
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-[#2C1A0E]/60 font-medium text-center">
             <span>📍 Taguig City, Metro Manila</span>
             <span class="hidden sm:block text-[#2C1A0E]/20">|</span>
             <span>🕐 Lun–Linggo, 7AM–8PM</span>
@@ -445,8 +448,21 @@
 .rt-space { display:inline-block; width:0.28em; }
 @keyframes rt-in  { from { transform:translateY(100%); opacity:0 } to { transform:translateY(0); opacity:1 } }
 @keyframes rt-out { from { transform:translateY(0); opacity:1 } to { transform:translateY(-120%); opacity:0 } }
+
+/* Floating food images */
+@keyframes float-bob {
+    0%   { transform: translateY(0px) scale(1); }
+    50%  { transform: translateY(-8px) scale(1.08); }
+    100% { transform: translateY(0px) scale(1); }
+}
+.floating-food {
+    animation: float-bob 3.5s ease-in-out infinite;
+}
+
 #menu-track { display:flex; }
 .menu-page  { min-width:100%; }
+#rotating-wrap { justify-content: center; }
+@media (min-width: 1024px) { #rotating-wrap { justify-content: flex-start; } }
 </style>
 
 <script>
