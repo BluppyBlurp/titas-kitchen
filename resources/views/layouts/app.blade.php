@@ -36,7 +36,7 @@
                 <a href="/" class="hover:text-[#C0392B] transition">Home</a>
                 <a href="/menu" class="hover:text-[#C0392B] transition">Menu</a>
                 <a href="/cart" class="relative hover:text-[#C0392B] transition">
-                    🛒 Cart
+                    🛒
                     <span id="cart-count" class="absolute -top-2 -right-4 bg-[#C0392B] text-white text-xs rounded-full w-4 h-4 flex items-center justify-center hidden">0</span>
                 </a>
                 <!-- Dark mode toggle -->
